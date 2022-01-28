@@ -147,6 +147,12 @@ section{
     font-size: large;
 }
 
+.myFavorites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .gamePreview{
     min-width: 350px;
     max-width: 350px;
@@ -156,7 +162,7 @@ section{
     align-items: center;
     flex-direction: column;
     margin: 5px;
-    padding: 2px;
+    padding: 5px;
     border: solid;
     transition: all .5s ease-out;
 }
@@ -168,6 +174,10 @@ section{
 
 .gamePreview img {
     max-width: 350px;
+}
+
+.gameSheet{
+    max-width: 900px;
 }
 
 .platform{

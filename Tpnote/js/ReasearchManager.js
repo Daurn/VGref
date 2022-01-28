@@ -17,9 +17,8 @@ export default class ReasearchManager{
 
         for(let i = 0; i < gamesTab.length; i++) {
             let gamePreviewDiv = new GamePreviewDiv(gamesTab[i],divMyFavorites);
-            divMyFavorites.innerHTML = divMyFavorites.innerHTML + gamePreviewDiv.div.innerHTML;
-
+            divMyFavorites.append(gamePreviewDiv.div);
         }
-        App.pageSection.innerHTML = App.pageSection.innerHTML + divMyFavorites.innerHTML
+        App.pageSection.append(divMyFavorites);
     }
 }
