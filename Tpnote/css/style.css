@@ -37,6 +37,11 @@ header{
     flex: 0;
 }
 
+header img {
+    height: 120px;
+    width: 112px;
+}
+
 header h2{
     font-size: xx-large;
 }

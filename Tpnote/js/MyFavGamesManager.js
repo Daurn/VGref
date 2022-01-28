@@ -12,6 +12,7 @@ export default class MyFavGamesManager {
 
         const divMyFavorites = document.createElement("div");
         divMyFavorites.classList.add("myFavorites");
+        //divMyFavorites.addEventListener("click", ReasearchManager.researchButtonOnClick.bind(ReasearchManager));
         App.pageSection.append(divMyFavorites)
 
         myFavGames.forEach(favGame=>{

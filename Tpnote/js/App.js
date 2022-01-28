@@ -29,14 +29,14 @@ export default class App{
         if (!researchButton) {
             throw new Error("boutonRecherche introuvable");
         }
-        researchButton.addEventListener("click", ReasearchManager.researchButtonOnClick.bind(ReasearchManager))
+        researchButton.addEventListener("click", ReasearchManager.researchButtonOnClick.bind(ReasearchManager));
 
 
         const favoritesButton = document.querySelector(".favoritesButton");
         if (!favoritesButton) {
             throw new Error("boutonFavoris introuvable");
         }
-        favoritesButton.addEventListener("click", MyFavGamesManager.favoritesButtonOnClick.bind(MyFavGamesManager))
+        favoritesButton.addEventListener("click", MyFavGamesManager.favoritesButtonOnClick.bind(MyFavGamesManager));
 
     }
 

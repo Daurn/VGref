@@ -1,3 +1,5 @@
+import GameSheetManager from "../GameSheetManager.js";
+
 export default class GamePreviewDiv{
     div;
 
@@ -23,5 +25,6 @@ export default class GamePreviewDiv{
             };
         }
         this.div = divGamePreview;
+        this.div.addEventListener("click", GameSheetManager.gamePreviewOnClick(game));
     }
 }
