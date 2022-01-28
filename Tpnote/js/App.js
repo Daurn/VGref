@@ -1,5 +1,5 @@
 import DAO from "./DAO.js";
-import MyFavGamesManager from "./MyFavGamesManager.js";
+import GamePreviewManager from "./GamePreviewManager.js";
 import ReasearchManager from "./ReasearchManager.js";
 
 
@@ -36,7 +36,7 @@ export default class App{
         if (!favoritesButton) {
             throw new Error("boutonFavoris introuvable");
         }
-        favoritesButton.addEventListener("click", MyFavGamesManager.favoritesButtonOnClick.bind(MyFavGamesManager));
+        favoritesButton.addEventListener("click", GamePreviewManager.favoritesButtonOnClick.bind(GamePreviewManager));
 
     }
 

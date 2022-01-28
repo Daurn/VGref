@@ -25,6 +25,11 @@ export default class GamePreviewDiv{
             };
         }
         this.div = divGamePreview;
-        this.div.addEventListener("click", GameSheetManager.gamePreviewOnClick(game));
+        console.log("test");
+        this.div.addEventListener("click", function (){
+            console.log("test event listener");
+            GameSheetManager.gamePreviewOnClick(game);
+        });
+        //fonction annnyme pr appeler onclick
     }
 }
